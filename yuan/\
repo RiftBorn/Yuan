@@ -1,0 +1,29 @@
+"""
+This script is for Yuan
+"""
+
+class YuanLi:
+	
+	def __init__(self, age=31, toefl_score=65):
+		self.age = age
+		self.toefl = toefl_score
+		pass
+
+	def talk(self):
+		print("Hello, I'm Yuan Lee~~~~~\nI'm a {}-year old gay. Please love me.".format(self.age))
+
+	def make_attention(self):
+		print('Come baby, my toefl_score is {}'.format(self.toefl))
+
+	def answer():
+		question = input('Please ask me a question: \na: Who is your favorite star?\nb: Which is your favorite sport\nc: Which is your favorite anime?')
+		answer_chart = {
+			'a': 'Jacky Chain~',
+			'b': 'Boxing',
+			'c': 'Naroto',
+		}
+		try:
+			print(answer_chart.get(input)	
+		except exception as ex:
+			print('Hey, you wanna fight w/ me?')
+	
