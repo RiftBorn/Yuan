@@ -1,6 +1,7 @@
 """
 This script is for Yuan
 """
+STATUS = '| Level: {} | HP: {} |\n| ATK: {}  | TOEFL: {} |'
 
 
 class YuanLi:
@@ -49,12 +50,22 @@ class YuanLi:
 	def get_attention(self):
 		print('Come baby, my toefl_score is {}'.format(self.toefl))
 
+	def print_status(self):
+		"""
+		Print status
+		"""
+		print(STATUS.format(self._level, self.hp, self.attack_point, self.toefl))
+
 	def reset_attributes(self):
 		"""
 		Compute the attributes for yuan
 		"""
 		self.hp = self.compute_init_hp()
 		self.attack_point = self.compute_init_attack()
+
+	def rest(self):
+		self.reset_attributes()
+		print('Having fun...')
 
 	def level_up(self):
 		"""
