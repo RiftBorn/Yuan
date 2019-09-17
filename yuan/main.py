@@ -3,9 +3,7 @@ from common.game import Game
 
 def run():
 	game = Game()
-	game.start()
-	shen = game.generate_enemy('Muy Shen', 10)
-	game.battle(shen)
+	game.main()
 
 
 if __name__ == "__main__":
